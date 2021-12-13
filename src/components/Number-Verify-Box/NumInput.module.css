@@ -1,0 +1,24 @@
+.num-input {
+  font-size: 4rem;
+  padding: 0;
+  margin: 0.1em;
+  width: 1em;
+  height: 1.5em;
+  overflow: hidden;
+  border: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  -moz-appearance: textfield;
+  border-radius: 15px;
+  outline: none;
+}
+
+.num-input[type=number]::-webkit-inner-spin-button, 
+.num-input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.correct {
+  border-top: 2px solid greenyellow;
+}

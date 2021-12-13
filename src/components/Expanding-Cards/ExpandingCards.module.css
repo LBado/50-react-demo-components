@@ -1,0 +1,8 @@
+.container {
+  font-size: 1rem;
+  display: flex;
+  width: 60em;
+  height: 20em;
+  /* background-color: rgb(37, 37, 37); */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}

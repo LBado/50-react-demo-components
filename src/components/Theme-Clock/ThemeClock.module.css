@@ -1,0 +1,149 @@
+:root {
+  --primary-color: rgb(0,0,0);
+  --secondary-color: rgb(255, 255, 255);
+}
+
+.tCContainer.dark {
+  /* ko bo na container applian dark class bo primary color */
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(16, 16, 16);
+}
+
+.tCContainer.dark {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.tCContainer {
+  font-size: 1rem;
+  height: 70vh;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: var(--secondary-color);
+  color: black;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+  flex-direction: column;
+  position: relative;
+}
+
+.tCContainer .toggle {
+  /* position: absolute; */
+  /* top: 2em; */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  padding: 0.6em 1em;
+  /* border-radius: 0.3em; */
+  cursor: pointer;
+  /* margin: 1em; */
+}
+
+.tCContainer .toggle:active {
+  outline: 0;
+  transform: scale(0.98);
+}
+
+.tCContainer .toggle:hover {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  margin: -1px;
+}
+
+.tCContainer .clock-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tCContainer .clock {
+  font-size: 1rem;
+  /* background-color: rgba(163, 163, 163, 0.1); */
+  border-radius: 50%;
+  width: 12em;
+  height: 12em;
+  position: relative;
+}
+
+.tCContainer .needle {
+  position: absolute;
+  transform-origin: bottom center;
+  width: 0.1em;
+  height: 5em;
+  background-color: var(--primary-color);
+  top: 50%;
+  left: 50%;
+  transition: all 0.3s ease-in;
+}
+
+.tCContainer .needle.hour {
+  transform: translate(0%, -100%) rotateZ(0deg);
+  height: 3em
+}
+
+.tCContainer .needle.minute {
+  transform: translate(0%, -100%) rotateZ(0deg);
+}
+
+.tCContainer .needle.second {
+  transform: translate(0%, -100%) rotateZ(0deg);
+  background-color: rgb(145, 0, 0);
+}
+
+.tCContainer .center-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -40%);
+  width: 0.4em;
+  height: 0.4em;
+  background-color: rgb(145, 0, 0);
+  border-radius: 50%;
+}
+
+.tCContainer .center-point:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.2em;
+  height: 0.2em;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+.tCContainer .time {
+  font-size: 3em;
+  margin: 0.5em 0 0 0;
+  font-weight: 600;
+}
+
+.tCContainer .date {
+  color:rgb(163, 163, 163);
+  font-size: 0.7em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* padding-bottom: 2em; */
+  margin-bottom: 2em;
+}
+
+.tCContainer .date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.7em;
+  transition: all 0.5s ease-in;
+  /* padding: 0; */
+  font-family: 'Times New Roman', Times, serif;
+}

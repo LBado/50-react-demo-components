@@ -1,0 +1,78 @@
+:root {
+  --blue: rgb(0, 109, 182);
+  --grey: rgb(190, 190, 190);
+  --white: rgb(255, 255, 255);
+  --lightblue: #129fff;
+  --content: '';
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: auto;
+  margin-bottom: 0.5em;
+  margin: 2em;
+}
+
+.progress-container::before {
+  content: '';
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.3em;
+  width: 100%;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+.progress-bar {
+  background-color: var(--lightblue);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0.3em;
+  z-index: 20;
+  transform: translateY(-50%);
+  /* transition: 0.2s ease-in; */
+}
+
+.step {
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  height: 1em;
+  width: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4 ease;
+  border-radius: 50%;
+  position: relative;
+  z-index: 20;
+  transition: 0.3s ease-in;
+  margin: -0.35em;
+}
+
+.step p {
+  position: absolute;
+  top: -2em;
+}
+
+.step::after {
+  content: var(--content);
+  background-color: var(--white);
+  height: 0.4em;
+  width: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4 ease;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+
+.step.active {
+  background-color: var(--lightblue);
+  transition: 0.3s ease-in;
+}

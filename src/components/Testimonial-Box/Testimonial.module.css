@@ -1,0 +1,52 @@
+.testimonial-box {
+  width: 30em;
+  background-color: rgb(98, 49, 143);
+  color: white;
+  padding: 1.5em;
+  border-radius: 15px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, .3);
+}
+
+.testimonial-box .bar {
+  background-color: rgb(249, 221, 255);
+  height: 3px;
+  width: 100%;
+  transform-origin: left;
+  animation: grow 10s linear infinite;
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+  
+}
+
+.testimonial-box .testimonial {
+  display: flex; 
+}
+
+.testimonial-box .testimonial span {
+  font-size: 6em;
+  margin: 0.1em;
+}
+
+.testimonial-box .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-box .profile img {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
+
+.testimonial-box .profile .info {
+  margin-left: 0.5em;
+}
+
+.testimonial-box .profile .info h4 {
+  margin: 0.1em 0;
+}

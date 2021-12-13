@@ -1,0 +1,65 @@
+.search-container {
+  font-size: 1rem;
+  font-family: 'Varela Round', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 15em;
+  height: 25em;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.search-container .search {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, rgba(4,102,208,1) 0%, rgba(105,0,218,1) 100%);
+  width: 100%;
+  padding: 1em;
+  align-items: flex-start;
+  color: white;
+}
+
+.search-container .search h3{
+  font-size: 0.9em;
+  margin: 0.3em 0;
+}
+
+.search-container .search label{
+  font-size: 0.7em;
+}
+
+.search-container .search input {
+  margin: 1em 0;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: 15px;
+  padding: 0.5em;
+  background-color: rgba(0, 25, 75, 0.3);
+  width: 100%;
+  outline: none;
+  color: white;
+} 
+
+.search-container .search input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-container .users {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 0;
+}
+
+.search-container .user-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}

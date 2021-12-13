@@ -1,0 +1,32 @@
+.contentBox {
+  width: 100%;
+  height: 100%;
+  margin: 0.2em;
+
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  background-color: rgb(247, 247, 247);
+  border-radius: 15px;
+}
+
+.cbRight {
+  transform: translateX(400%);
+}
+.cbLeft {
+  transform: translateX(-400%);
+}
+
+.contentBox p {
+  padding: 0.3em;
+  text-align: center;
+}
+
+.contentBox.show {
+  transform: translateX(0%);
+}

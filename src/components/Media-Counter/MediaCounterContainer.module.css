@@ -1,0 +1,27 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 0 1em;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  /* transform: translateY(-50%); */
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgb(87, 115, 167, 0.3);
+  font-size: 5em;
+}
+
+.counter {
+  font-size: 3em;
+}
+
+.title {
+  text-align: center;
+}

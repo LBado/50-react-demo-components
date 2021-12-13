@@ -1,0 +1,163 @@
+.gPContainer {
+  font-size: 1rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(34, 12, 59);
+  flex-direction: column;
+  color: white;
+}
+
+.gPContainer .notFound {
+  max-width: 40vw;
+  background-color: rgba(54, 49, 68, 0.6);
+  padding: 0.5em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(255, 17, 0);
+  box-shadow: 0px -1px 18px rgba(255, 0, 0, 0.3),
+  0px -1px 2px 1px rgba(255, 0, 0, 0.6);
+  animation: inOut 0.3s forwards;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  margin-bottom: 2em;
+}
+
+@keyframes inOut {
+  0% {
+    transform: scale(0.90);
+  }
+  50% {
+    transform: scale(1.10);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.gPContainer .notFound h2{
+  margin: 0.2em;
+}
+
+.gPContainer .form {
+  width: 100%;
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gPContainer .form label {
+  margin: 0.3em;
+  text-align: center;
+  word-spacing: 0.13em;
+}
+
+.gPContainer .form input {
+  padding: 0.9em;
+  width: 100%;
+  background-color: rgb(36, 25, 65);
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+  margin-bottom: 1em;
+}
+
+.gPContainer .form input:focus {
+  outline: none;
+}
+
+.gPContainer .form input:focus::placeholder {
+  opacity: 0;
+}
+
+.gPContainer .form input:hover {
+  background-color: rgb(54, 49, 68);
+  box-shadow: 0px 2px 20px rgb(212, 69, 255);
+}
+
+.gPContainer .form input::placeholder {
+  transition: color 0.3s ease-in-out;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.gPContainer .form:hover input::placeholder {
+  color: rgba(255, 255, 255, 1);
+}
+
+.gPContainer .form:active {
+  outline: none;
+  border: 0;
+}
+
+.gPContainer .card {
+  opacity: 0;
+  max-width: 40vw;
+  background-color: rgba(54, 49, 68, 0.6);
+  padding: 1em;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid orange;
+  box-shadow: 0px -1px 18px rgba(255, 166, 0, 0.3),
+    0px -1px 2px 1px rgba(255, 166, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.gPContainer .card:hover {
+  transform: scale(1.02);
+}
+
+.gPContainer .card img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  width: 6em;
+  height: 6em;
+  margin-right: 1em;
+}
+
+.gPContainer .user {
+  margin-left: 1em;
+}
+
+.gPContainer .user h2 {
+  margin-bottom: 0.9em;
+}
+
+.gPContainer .user p {
+  margin-bottom: 0.5em;
+}
+
+.gPContainer .user ul {
+  list-style-type: none;
+  /* margin: 0.3em; */
+  /* margin-left: 3em; */
+  display: flex;
+  padding: 0.6em;
+  justify-content: space-around;
+  max-width: 100%;
+}
+
+.gPContainer .card button {
+  background-color: rgb(65, 53, 99);
+  color: white;
+  border: 0;
+  padding: 0.3em 0.6em;
+  margin: 0.3em;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+}

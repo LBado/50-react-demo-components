@@ -1,0 +1,36 @@
+.img-container {
+  width: 910px;
+  height: 70vh;
+  
+  padding: 0;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}
+
+.img-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0.1em;
+  max-width: 100%;
+}
+
+.img-container button {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  height: 5em;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  /* border-top: 2px solid black; */
+  cursor: pointer;
+}
+
+.img-container button:hover {
+  background-color: rgb(250, 250, 250);
+  font-weight: 600;
+}

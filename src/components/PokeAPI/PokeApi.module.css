@@ -1,0 +1,48 @@
+.pokeContainer {
+  height: 70vh;
+  width: 70vw;
+  overflow-y: scroll;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.pokeContainer .poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 80vw;
+  height: 80vh;
+  /* padding: 2em; */
+  overflow-y: scroll;
+}
+
+.pokeContainer .title {
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.pokeContainer .actions {
+  width: 100%;
+  display: flex;
+}
+
+.pokeContainer .actions button {
+  width: 100%;
+  border: 0;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pokeContainer .actions button:hover {
+  background-color: rgb(238, 238, 238);
+  letter-spacing: 3px;
+}
+
+.pokeContainer .actions button:active {
+  background-color: rgb(211, 211, 211);
+}

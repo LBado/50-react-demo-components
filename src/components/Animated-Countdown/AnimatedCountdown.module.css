@@ -1,0 +1,184 @@
+
+.aCContainer {
+  font-size: 1rem;
+  margin: 0;
+  display: block;
+  width: 30em;
+  height: 30em;
+  background-color: azure;
+  position: relative;
+}
+
+.aCContainer .counter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.aCContainer .counter.hide {
+  transform: translate(-50%, -50%) scale(0);
+  animation: hide 0.2s ease-out;
+}
+
+@keyframes hide {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+.aCContainer .final {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  text-align: center;
+}
+
+.aCContainer .final.show {
+  transform: translate(-50%, -50%) scale(1);
+  animation: show 0.4s ease-out;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  30% {
+    transform: translate(-60%, -60%) scale(1.4);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.aCContainer .nums {
+  color: rgb(255, 255, 255);
+  color: black;
+  position: relative;
+  /* background-color: bisque; */
+  height: 3.5em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+
+.aCContainer .nums span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  font-size: 3em;
+  display: block;
+  transform-origin: bottom center;
+}
+
+.aCContainer .nums span.in {
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: goIn 0.8s ease-in-out;
+}
+
+.aCContainer .nums span.out {
+  animation: goOut 0.8s ease-in-out;
+}
+
+@keyframes goIn {
+  0% {
+    transform: translate(-50%, -50%) rotate(120deg);
+  }
+
+  30% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes goOut {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  60% {
+    transform: translate(-50%, -50%) rotate(20deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}
+
+.aCContainer .final h1 {
+  padding: 0.5em;
+  /* animation: colorExp 1s ease-in-out infinite; */
+}
+
+@keyframes colorExp {
+  0% {
+    text-shadow: 0 0 3px cyan;
+  }
+  20% {
+    text-shadow: 0 0 3px cyan, 0 0 6px rgb(0, 132, 255);
+  }
+  40% {
+    text-shadow: 0 0 3px cyan, 0 0 6px rgb(0, 132, 255), 0 0 9px magenta;
+  }
+  60% {
+    text-shadow: 0 0 3px cyan, 0 0 6px rgb(0, 132, 255), 0 0 9px magenta,
+      0 0 12px rgb(255, 0, 76);
+  }
+  80% {
+    text-shadow: 0 0 3px cyan, 0 0 6px rgb(0, 132, 255), 0 0 9px magenta,
+      0 0 12px rgb(255, 0, 76), 0 0 15px rgb(255, 115, 0);
+  }
+  100% {
+    text-shadow: 0 0 3px cyan, 0 0 6px rgb(0, 132, 255), 0 0 9px magenta,
+      0 0 12px rgb(255, 0, 76), 0 0 15px rgb(255, 115, 0),
+      0 0 18px rgb(255, 238, 0);
+  }
+}
+
+.aCContainer .final button {
+  outline: none;
+  border: 1px solid rgb(168, 168, 168);
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.aCContainer .final button:hover {
+  border: 0;
+  margin: 1px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.number-enter {
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.number-enter-active {
+  animation: goIn 0.5s ease-in-out forwards;
+}
+
+.number-exit-active {
+  animation: goOut 0.5s ease-in-out forwards;
+}
+.number-exit {
+  transform: translate(-50%, -50%) rotate(-120deg);
+}

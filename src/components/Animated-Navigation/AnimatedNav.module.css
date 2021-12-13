@@ -1,0 +1,101 @@
+.aNContainer {
+  font-size: 1rem;
+  height: 20em;
+  width: 30em;
+  min-width: 20em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: rgb(255, 255, 243);
+  background-image: linear-gradient(
+    to right,
+    rgb(244, 255, 213) 0%,
+    rgb(230, 255, 162) 50%,
+    rgb(255, 235, 59) 50%,
+    rgb(255, 208, 0) 100%
+  );
+  color: black;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aNContainer .nav {
+  background-color: #fff;
+  padding: 0.5em;
+  width: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 3px; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: width 0.6s linear;
+  overflow-x: hidden;
+}
+
+.aNContainer .nav.active {
+  width: 35em;
+}
+
+.aNContainer .nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  transition: width 0.6s linear;
+}
+
+.aNContainer .nav.active ul {
+  width: 90%;
+}
+
+.aNContainer .nav ul li {
+  transform: rotateY(0deg);
+  opacity: 0;
+  transition: transform 0.6s linear, opacity 0.6s linear;
+}
+
+.aNContainer .nav ul li span {
+  /* position: relative; */
+  color: #000;
+  text-decoration: none;
+  margin: 0 0.6em;
+}
+
+.aNContainer .nav.active ul li {
+  opacity: 1;
+  transform: rotateY(360deg);
+}
+
+.aNContainer .icon {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  height: 2em;
+  width: 2em;
+}
+
+.aNContainer .icon div {
+  background-color: #242424;
+  height: 0.04em;
+  width: 1.6em;
+  position: absolute;
+  top: 0.65em;
+  left: 0.2em;
+  transition: transform 0.6s linear;
+}
+
+.aNContainer .icon .line2 {
+  top: auto;
+  bottom: 0.65em;
+}
+
+.aNContainer .nav.active .line1 {
+  transform: rotate(-765deg) translateY(0.45em);
+}
+
+.aNContainer .nav.active .line2 {
+  transform: rotate(765deg) translateY(-0.45em);
+}

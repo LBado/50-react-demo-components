@@ -1,0 +1,68 @@
+.drawContainer {
+  font-size: 1rem;
+  height: auto;
+  width: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: rgb(255, 251, 247);
+  color: black;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.drawContainer .canvas {
+  background-color: rgb(226, 238, 255);
+  margin: 0;
+}
+
+.drawContainer .toolbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: auto;
+  align-items: center;
+  background-color: rgb(63, 93, 119);
+}
+
+.drawContainer .toolbox > * {
+  margin: 0 0.5em;
+  background-color: rgb(63, 93, 119);
+}
+
+.drawContainer .toolbox input {
+  border: 0;
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+.drawContainer .toolbox button {
+  border: 0;
+  height: 2em;
+  width: 2em;
+  padding: 0;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.drawContainer .toolbox button:active {
+  background-color: rgb(98, 114, 128);
+  transform: scale(0.80);
+}
+
+.drawContainer .toolbox button:hover {
+  background-color: rgb(76, 98, 117);
+}
+
+.drawContainer .toolbox .size {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.drawContainer .toolbox .clear {
+  margin-left: auto;
+}

@@ -1,0 +1,48 @@
+.sBContainer {
+  font-size: 1rem;
+  /* height: 30em; */
+  width: 20em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: rgb(0,84,142);
+  background: linear-gradient(73deg, rgb(142, 0, 123) 0%, rgb(167, 75, 175) 100%);  color: white;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+.sBContainer .track-container {
+  background-color: rgba(78, 0, 151, 0.247);
+  margin: 0.5em;
+  padding: 0.4em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+}
+
+.sBContainer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: transparent;
+  padding: 0.6em;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0;
+  color: white;
+}
+
+/* button svg {
+  top: 50%;
+  transform: translateX(-50%);
+  left: 35%;
+  transform: translateY(-50%);
+} */
+
+.sBContainer p {
+  display: inline-block;
+  margin: 0;
+  margin-left: 0.5em;
+  height: 100%;
+  vertical-align: middle;
+}

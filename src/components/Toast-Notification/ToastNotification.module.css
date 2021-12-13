@@ -1,0 +1,26 @@
+.toasts {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
+.toastBtn {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1em;
+  background-color: rgb(255, 174, 0);
+  border-radius: 25px;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.toastBtn:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+}
+
+.toastBtn:active {
+  transform: scale(0.98);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
+}

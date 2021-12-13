@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root {
+  --blurValue: 30px;
+}
+
+.container {
+  font-size: 1rem;
+  font-family: 'Open-Sans', sans-serif;
+  width: 35em;
+  height: 20em;
+  box-shadow: #00000029 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg {
+  background-image: url('https://images.unsplash.com/photo-1625141999182-a15848af6529');
+  background-position: bottom -3em left 0em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -1.5em;
+  left: -1.5em;
+  width: calc(100% + 1.5em);
+  height: calc(100% + 1.5em);
+  z-index: -1;
+  filter: blur(var(--blurValue));
+}
+
+.loading-text {
+  font-size: 4em;
+  color: rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,24 @@
+:root {
+  --rngColor: #33B9FF;
+}
+
+.square {
+  background-color: rgb(36, 36, 36);
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  transition: all 1.5s ease;
+}
+
+.square:hover {
+  /* tranzicija ob hover je instant, ko zapustimo pa je ease-out */
+  transition-duration: 0s;
+  background-color: var(--rngColor);
+  box-shadow: 0 0 12px var(--rngColor);
+}
+
+.square.active {
+  box-shadow: 0 0 12px var(--rngColor);
+  transition-duration: 0s;
+  background-color: var(--rngColor);
+}

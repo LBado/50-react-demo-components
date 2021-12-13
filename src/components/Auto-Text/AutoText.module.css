@@ -1,0 +1,12 @@
+.aTContainer {
+  display: flex;
+}
+
+.aTContainer .letter {
+  display: inline-flex;
+  /* padding: 0.3em;
+  width: 0.7em;
+  text-align: center;
+  justify-items: center;
+  align-items: center; */
+}

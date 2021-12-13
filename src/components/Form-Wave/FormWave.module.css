@@ -1,0 +1,120 @@
+:root {
+  --animation: 1s;
+}
+
+.fWContainer {
+  font-size: 1rem;
+  /* height: 30em; */
+  width: 20em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: rgb(0,84,142);
+  background: linear-gradient(73deg, rgba(0,84,142,1) 0%, rgba(0,110,217,1) 100%);  color: white;
+  padding: 1em;
+}
+
+.fWContainer h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.fWContainer p {
+  text-align: center;
+  width: 100%;
+  margin-top: 1.5em;
+}
+
+.fWContainer p span {
+  color: rgb(158, 200, 255);
+  cursor: pointer;
+}
+
+.fWContainer .form-container {
+  padding: 0.2em;
+  width: 100%;
+}
+
+.fWContainer .formControl {
+  position: relative;
+  width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.fWContainer .input {
+  display: block;
+  background-color: rgba(4, 40, 73, 0);;
+  border: 0;
+  border-bottom: 0.1em solid rgb(255, 255, 255);
+  width: 100%;
+  padding: 0.5em;
+  color: rgb(255, 255, 255);
+}
+
+.fWContainer button {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  padding: 1em;
+  border: 0;
+  margin-top: 2em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(47, 59, 75);
+  border-radius: 3px;
+}
+
+.fWContainer button:focus {
+  outline: 0;
+}
+
+.fWContainer button:active {
+  transform: scale(0.99);
+}
+
+.fWContainer .label {
+  position: absolute;
+  top: 0.4em;
+  left: 0.4em;
+  pointer-events: none;
+}
+
+/* .letter {
+  display: inline-block;
+  padding: 0;
+  /* animation: fadeInAnimation ease-in var(--animation); */
+/* transform: translateY(-2em); */
+/* } */
+
+@keyframes fadeInAnimation {
+  0% { transform: translateY(0em); }
+  100% { transform: translateY(-1em);}
+}
+
+.fWContainer label span {
+  display: inline-block;
+}
+
+/* .fWContainer input:focus + label span {
+  color: rgb(147, 197, 255);
+  transform: translateY(-1.5em);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+} */
+
+.fWContainer .spanFocus {
+  color: rgb(147, 197, 255);
+  /* animation: fadeInAnimation ease-out var(--animation); */
+  /* animation-fill-mode: forwards; */
+  transform: translateY(-1.5em);
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) ;
+}
+
+.fWContainer .inputFocus {
+  outline: 0;
+  border-bottom-color: rgb(129, 188, 255);
+}
+
+/* .fWContainer input:focus {
+  outline: 0;
+  border-bottom-color: rgb(129, 188, 255);
+} */
+
+/* input:valid je always on */

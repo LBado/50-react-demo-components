@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.container {
+  font-size: 1rem;
+  font-family: 'Open-Sans', sans-serif;
+  width: 35em;
+  height: 20em;
+  box-shadow: #00000029 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  position: relative;
+  background-color: blueviolet;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.btn-container {
+  position: absolute;
+  top: 0.3em;
+  left: 0.3em;
+  z-index: 100;
+}
+
+.btn-container > button {
+  font-size: 1.3em;
+  transition: 0.3s ease-in;
+  border: 0;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.btnOpen {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.btnClose{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.btnClose:hover {
+  color: rgb(255, 255, 255);
+}
+
+.btnOpen:hover {
+  color: rgb(0, 0, 0);
+}

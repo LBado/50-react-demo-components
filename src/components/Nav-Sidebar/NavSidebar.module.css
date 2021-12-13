@@ -1,0 +1,123 @@
+.menuOpen {
+  border: 0;
+  background-color: rgb(39, 39, 39);
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  justify-content: center;
+  line-height: 1;
+  position: fixed;
+  top: 3em;
+  left: 3em;
+  transform: translate(-50%, -50%);
+}
+
+
+.menuOpen:hover {
+  width: 35px;
+  height: 35px;
+}
+
+
+.nav {
+  position: fixed;
+  font-size: 1rem;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nav.active {
+  transform: translateX(0);
+}
+
+.nav.black {
+  background-color: rgb(26, 26, 26);
+  width: 20vw;
+  transition-delay: 0.4s;
+}
+
+.nav.black.active {
+  transition-delay: 0s;
+}
+
+.nav.red {
+  background-color: red;
+  width: 19vw;
+  transition-delay: 0.2s;
+}
+
+.nav.red.active {
+  transition-delay: 0.2s;
+}
+
+.nav.white {
+  background-color: white;
+  width: 18vw;
+  transition-delay: 0s;
+  position: relative;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav.white.active {
+  transition-delay: 0.4s;
+}
+.menuClose:hover {
+  width: 35px;
+  height: 35px;
+}
+
+.menuClose {
+  border: 0;
+  background-color: rgb(39, 39, 39);
+  border-radius: 50%;
+  color: white;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  justify-content: center;
+  line-height: 1;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+
+  transform: translate(-50%, -50%);
+}
+
+.list {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: flex;
+  padding: 0;
+}
+
+.list li {
+  margin: 0.2em 0;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.list li:hover {
+  transform: scale(1.2) translateX(20px);
+}

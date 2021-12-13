@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+/* roboto, muli, open+sans, Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* font-family: 'Varela Round', sans-serif; */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* overflow: scroll; */
+  /* background: radial-gradient(circle, rgba(224,224,224,1) 0%, rgba(255,255,255,1) 100%); */
+  /* background: radial-gradient(circle, rgba(76,76,76,1) 0%, rgba(37,37,37,1) 100%); */
+}

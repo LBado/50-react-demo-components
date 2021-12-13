@@ -1,0 +1,61 @@
+.lDCContainer {
+  font-family: 'Oswald';
+  font-size: 1rem;
+  width: 20em;
+  height: 30em;
+  background-color: rgb(255, 254, 253);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.lDCContainer .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+  letter-spacing: 0.019em;
+}
+
+.lDCContainer .info h2 {
+  font-size: 1em;
+  margin: 0.5em 0em;
+}
+
+.lDCContainer .info p {
+  font-size: 0.8em;
+}
+
+.lDCContainer .info span {
+  display: inline-block;
+  margin: 0;  
+  font-weight: 600;
+}
+
+.lDCContainer .image {
+  background-image: url('https://source.unsplash.com/random/1920x1080');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  flex-grow: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.lDCContainer .heart {
+  position: absolute;
+  text-shadow: 0 0 6px rgba(156, 0, 0, 0.6);
+  color: rgb(156, 0, 0);
+  transform: scale(2);
+  animation: heart 0.3s ease-in;
+  /* transform: translate(-50%, -50%); */
+}
+
+
+@keyframes heart {
+  to {
+    transform: scale(4);
+  }
+}

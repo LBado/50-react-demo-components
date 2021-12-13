@@ -1,0 +1,96 @@
+.selection-menu {
+  font-size: 1rem;
+  position: absolute;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 17px;
+  background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgb(255, 255, 255) 100%);
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.selection-menu.shown {
+  transform: translateX(0%);
+}
+
+.side-menu-btn {
+  font-size: 1.2em;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  width: fit-content;
+}
+
+.side-menu-btn:hover {
+  transform: scale(1.2);
+}
+
+.side-menu-btn-open {
+  position: absolute;
+  top: 0.3em;
+  left: 0.3em;
+}
+
+.side-menu-btn-close {
+  margin: 0.3em;
+}
+
+.selection-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.selection-menu h4 {
+  margin: 0.5em 0;
+  margin-left: 0.3em;
+}
+
+.selection-menu hr {
+  width: 0%;
+  color: black;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0.3em;
+  border: 1px solid black;
+  transition: width 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.selection-menu.shown hr {
+  width: 100vw;
+}
+
+.selection-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.selection-menu li {
+  padding: 0.2em;
+  cursor: pointer;
+  margin-top: -1px;
+  transition: all 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+}
+
+.selection-menu li:hover {
+  transform: scale(1.2) translateX(9%);
+}
+

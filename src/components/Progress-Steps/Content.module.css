@@ -1,0 +1,22 @@
+:root {
+  --animation: 1s;
+}
+
+.content {
+  font-size: 1.1em;
+  padding: 2em;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.letter {
+  margin: 0;
+  padding: 0;
+  animation: fadeInAnimation ease-in var(--animation);
+}
+
+@keyframes fadeInAnimation {
+  0% { opacity: 0; transform: translateY(-7em); }
+  100% { opacity: 1; transform: translateY(0em);}
+}

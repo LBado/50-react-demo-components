@@ -1,0 +1,68 @@
+.cbSContainer {
+  background: linear-gradient(
+    45deg,
+    rgb(134, 20, 119) 0%,
+    rgb(70, 35, 134) 100%
+  );
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+.cbSContainer .toggle-container {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cbSContainer .label {
+  padding: 0;
+  margin: 0;
+  margin-right: 0.3em;
+  width: 3em;
+  height: 21px;
+  background-color: rgba(255, 255, 255, 0.3);
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.cbSContainer .ball {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  height: 17px;
+  width: 17px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.cbSContainer .input {
+  visibility: hidden;
+}
+
+/* tisti input ki je checked in takoj potem naslednji label */
+/* .input:checked .label ne bi izbral nič ker v input ni elementa .label */
+.cbSContainer .input:checked + .label {
+  background: linear-gradient(
+    45deg,
+    rgba(164, 238, 252, 0.712) 0%,
+    rgb(234, 97, 247) 100%
+  );
+}
+
+.cbSContainer .input:checked + .label .ball {
+  left: 60%;
+}

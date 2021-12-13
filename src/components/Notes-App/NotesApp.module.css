@@ -1,0 +1,34 @@
+.nAContainer {
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  background: linear-gradient(
+    180deg,
+    rgba(210, 210, 210, 1) 0%,
+    rgba(255, 255, 255, 1) 3%,
+    rgb(235, 235, 235) 99%
+  );
+  width: 70vw;
+  height: 70vh;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.nAContainer .add {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-weight: 900;
+  padding: 0.5em 1em;
+  color: white;
+  letter-spacing: 0.019em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.nAContainer .add:hover {
+  background-color: rgb(84, 155, 84);
+}

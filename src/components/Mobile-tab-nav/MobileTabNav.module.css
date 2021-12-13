@@ -1,0 +1,98 @@
+.mTNContainer {
+  font-size: 1rem;
+  font-family: 'Roboto';
+  width: 20em;
+  height: 35em;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  border-radius: 20px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.mTNContainer .img-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  background-color: azure;
+  position: relative;
+}
+
+.mTNContainer .img-container img {
+  position: absolute;
+  object-fit: fill;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%);
+  opacity: 0;
+  animation: hide 2s forwards;
+}
+
+.mTNContainer .img-container img.active {
+  animation: show 2s forwards;
+  opacity: 1;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.mTNContainer nav {
+  height: 2em;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0.3em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mTNContainer nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.mTNContainer nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.mTNContainer nav ul li.active h4,
+.mTNContainer nav ul li:hover h4 {
+  color: rgb(255, 255, 255);
+  transform: scale(1.4);
+}
+
+.mTNContainer nav ul li h4 {
+  transition: all 0.3s ease-in;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.7em;
+}
+

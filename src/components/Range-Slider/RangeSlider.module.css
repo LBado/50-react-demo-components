@@ -1,0 +1,51 @@
+:root {
+  --pos: '0';
+}
+
+.range-container {
+  background-color: rgb(216, 138, 35);
+  font-size: 1rem;
+  width: auto;
+  height: auto;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.range-container .slide {
+  background-color: bisque;
+  width: 150px;
+  height: 3px;
+  position: relative;
+  font-family: 'Roboto';
+}
+
+.range-container .slider {
+  background-color: rgb(180, 139, 76);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.range-container .slider::before {
+  content: var(--pos);
+  color: black;
+  position: absolute;
+  /* width: 25px; */
+  /* height: 15px; */
+  padding: 0.1em;
+  top: -23px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

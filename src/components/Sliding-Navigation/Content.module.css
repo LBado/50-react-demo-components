@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100&display=swap');
+
+.sNContent {
+  /* transform-origin: left; */
+  transition: transform 1s ease-out;
+  margin: 0;
+  z-index: 10;
+  transform: translateY(-2em);
+  padding: 2em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('https://images.unsplash.com/photo-1517021818302-9b520a06c834');
+  background-size: 60%;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+}
+
+.sNContent h3 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.sNContent p {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0 1em 0 1em;
+  margin: 0;
+}
+
+.sNContent .content.showNav {
+  transform: translateY(0em);
+}
+
+.sNContent .form textarea {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  background-color: rgb(255, 255, 255, 0.8);
+  font-style: italic;
+  color: rgb(0, 0, 0, 0.6);
+}
+
+.sNContent .form button {
+  font-size: 0.8em;
+  float: right;
+  font-style: italic;
+}
