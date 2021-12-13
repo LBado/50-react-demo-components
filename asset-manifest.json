@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/50-react-demo-components/static/css/main.5148ad92.chunk.css",
+    "main.js": "/50-react-demo-components/static/js/main.73918692.chunk.js",
+    "main.js.map": "/50-react-demo-components/static/js/main.73918692.chunk.js.map",
+    "runtime-main.js": "/50-react-demo-components/static/js/runtime-main.f9415c55.js",
+    "runtime-main.js.map": "/50-react-demo-components/static/js/runtime-main.f9415c55.js.map",
+    "static/js/2.d3ba5c0c.chunk.js": "/50-react-demo-components/static/js/2.d3ba5c0c.chunk.js",
+    "static/js/2.d3ba5c0c.chunk.js.map": "/50-react-demo-components/static/js/2.d3ba5c0c.chunk.js.map",
+    "static/js/3.b611c145.chunk.js": "/50-react-demo-components/static/js/3.b611c145.chunk.js",
+    "static/js/3.b611c145.chunk.js.map": "/50-react-demo-components/static/js/3.b611c145.chunk.js.map",
+    "index.html": "/50-react-demo-components/index.html",
+    "static/css/main.5148ad92.chunk.css.map": "/50-react-demo-components/static/css/main.5148ad92.chunk.css.map",
+    "static/js/2.d3ba5c0c.chunk.js.LICENSE.txt": "/50-react-demo-components/static/js/2.d3ba5c0c.chunk.js.LICENSE.txt",
+    "static/media/sound-board_sounds_applause.848d751c.mp3": "/50-react-demo-components/static/media/sound-board_sounds_applause.848d751c.mp3",
+    "static/media/sound-board_sounds_boo.758657a0.mp3": "/50-react-demo-components/static/media/sound-board_sounds_boo.758657a0.mp3",
+    "static/media/sound-board_sounds_gasp.21db83a7.mp3": "/50-react-demo-components/static/media/sound-board_sounds_gasp.21db83a7.mp3",
+    "static/media/sound-board_sounds_tada.77662047.mp3": "/50-react-demo-components/static/media/sound-board_sounds_tada.77662047.mp3",
+    "static/media/sound-board_sounds_victory.56f384d8.mp3": "/50-react-demo-components/static/media/sound-board_sounds_victory.56f384d8.mp3",
+    "static/media/sound-board_sounds_wrong.57da2ce6.mp3": "/50-react-demo-components/static/media/sound-board_sounds_wrong.57da2ce6.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9415c55.js",
+    "static/js/2.d3ba5c0c.chunk.js",
+    "static/css/main.5148ad92.chunk.css",
+    "static/js/main.73918692.chunk.js"
+  ]
+}
